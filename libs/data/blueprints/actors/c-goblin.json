@@ -1,0 +1,67 @@
+{
+  "entityType": "ENTITY_TYPE_ACTOR",
+  "specie": "SPECIE_HUMANOID",
+  "size": "CREATURE_SIZE_SMALL",
+  "speed": 30,
+  "ac": 10,
+  "feats": [
+  ],
+  "skills": [
+    {
+      "skill": "SKILL_STEALTH",
+      "value": 6
+    }
+  ],
+  "classes": [
+    {
+      "class": "CLASS_MONSTER",
+      "level": 2
+    }
+  ],
+  "abilities": [
+    {
+      "ability":"ABILITY_STRENGTH",
+      "value": 15
+    },
+    {
+      "ability":"ABILITY_DEXTERITY",
+      "value": 14
+    },
+    {
+      "ability":"ABILITY_CONSTITUTION",
+      "value": 14
+    },
+    {
+      "ability":"ABILITY_INTELLIGENCE",
+      "value": 12
+    },
+    {
+      "ability":"ABILITY_WISDOM",
+      "value": 10
+    },
+    {
+      "ability":"ABILITY_CHARISMA",
+      "value": 9
+    }
+  ],
+  "proficiencies": [
+    "PROFICIENCY_ARMOR_LIGHT",
+    "PROFICIENCY_SHIELD",
+    "PROFICIENCY_WEAPON_SIMPLE"
+  ],
+  "alignment": "ALIGNMENT_NEUTRAL_EVIL",
+  "equipment": [
+    {
+      "slot": "EQUIPMENT_SLOT_CHEST",
+      "item": "arm-leather"
+    },
+    {
+      "slot": "EQUIPMENT_SLOT_WEAPON_MELEE",
+      "item": "wpn-club"
+    },
+    {
+      "slot": "EQUIPMENT_SLOT_SHIELD",
+      "item": "arm-shield"
+    }
+  ]
+}
