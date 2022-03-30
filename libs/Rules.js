@@ -39,11 +39,25 @@ const EventEmitter = require('events')
  * @property abilities {AbilityState}
  * @property effects {EffectState[]}
  * @property equipment {EquipmentState}
+ *
+ * @typedef Blueprint {object}
+ * @property entityType {string} "ENTITY_TYPE_ITEM",
+ *   "itemBaseType": "ITEM_BASE_TYPE_WEAPON",
+ *   "itemSubType": "WEAPON_TYPE_CLUB",
+ *   "magical": false,
+ *   "properties": []
  */
+
+const ITEM_BASE_TYPES = require('./data/item-base-types.json')
+const WEAPON_TYPES = require('./data/weapon-types.json')
 
 class Rules {
     constructor() {
         this._blueprints = {}
+        this._data = {
+            ITEM_BASE_TYPES,
+            WEAPON_TYPES
+        }
         this._state = {
             entities: {}
         }
@@ -94,10 +108,11 @@ class Rules {
      * @return {EntityState}
      */
     createEntity (resref) {
+        const id = ++this._id
         const blueprint = this.getBlueprint(resref)
         const abilities = blueprint.abilities
         const oEntity = {
-            id: ++this._id,
+            id,
             blueprint,
             abilities: {
                 str: 0,
@@ -123,6 +138,12 @@ class Rules {
                 feet: 0
             }
         }
+        // Les configuration d'armements suivants sont possibles
+        // primaryHand : arme 1M
+        // primaryHand : arme 2M
+        // primaryHand : arme 1M - secondaryHand : bouclier
+        // primaryHand : arme 1M - secondaryHand : arme dist
+        // primaryHand : arme 1M - secondaryHand : arme 1M
         if (blueprint.type === 'ENTITY_TYPE_ACTOR') {
             const ea = oEntity.abilities
             const ba = blueprint.abilities
@@ -132,14 +153,15 @@ class Rules {
             ea.esq = ba.esq
             ea.int = ba.int
             ea.wil = ba.wil
-            const ee = oEntity.equipment
             const be = blueprint.equipment
-            const oItemEquip = {}
+            const oInventory = {}
+            // Créer les items équippés
             for (const [sSlot, resref] in Object.entries(be)) {
-                oItemEquip[sSlot] = this.createEntity(resref)
+                oInventory[sSlot] = this.createEntity(resref)
             }
-            for (const [sSlot, item] in Object.entries(oItemEquip)) {
-
+            // Equipper les items précédemment créés
+            for (const [sSlot, item] in Object.entries(oInventory)) {
+                this.equipItem(oEntity, item, sSlot)
             }
         }
 
@@ -189,7 +211,8 @@ class Rules {
      * @returns {string}
      */
     getItemEquipmentSlot (entity, item) {
-        //
+        // déterminer les slots possibles
+
     }
 
     /**

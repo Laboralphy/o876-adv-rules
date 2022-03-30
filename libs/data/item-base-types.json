@@ -1,0 +1,11 @@
+{
+  "ITEM_BASE_TYPE_WEAPON": {
+    "stackable": false,
+    "dataType": "WEAPON_TYPES",
+    "equipSlots": [
+      "EQUIPMENT_SLOT_WEAPON_MELEE",
+      "EQUIPMENT_SLOT_WEAPON_2ND_MELEE",
+      "EQUIPMENT_SLOT_WEAPON_RANGED"
+    ]
+  }
+}
