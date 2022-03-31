@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "description": "Structure de définition d'un blueprint d'objet equipable",
+  "required": [
+    "entityType",
+    "itemBaseType",
+    "properties"
+  ],
+  "properties": {
+    "entityType": {
+      "description": "type d'entité ENTITY_TYPE_*",
+      "type": "string",
+      "const": "ENTITY_TYPE_ITEM"
+    },
+    "properties": {
+      "description": "liste des item properties",
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "property"
+          ],
+          "properties": {
+            "property": {
+              "type": "string",
+              "pattern": "^ITEM_PROPERTY_[_A-Z0-9]+$"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "itemSubType",
+        "magical"
+      ],
+      "properties": {
+        "itemBaseType": {
+          "type": "string",
+          "const": "ITEM_BASE_TYPE_WEAPON"
+        },
+        "itemSubType": {
+          "description": "type d'objet",
+          "type": "string",
+          "pattern": "^WEAPON_TYPE_[_A-Z0-9]+$"
+        },
+        "magical": {
+          "description": "une arme qui ignore la résistance permet de blesser les bestiole naturellement immunisée aux arme non-magique",
+          "type": "boolean"
+        }
+      }
+    },
+    {
+      "required": [
+        "itemSubType"
+      ],
+      "properties": {
+        "itemBaseType": {
+          "type": "string",
+          "const": "ITEM_BASE_TYPE_ARMOR"
+        },
+        "itemSubType": {
+          "description": "type d'objet",
+          "type": "string",
+          "pattern": "^ARMOR_TYPE_[_A-Z0-9]+$"
+        }
+      }
+    },
+    {
+      "required": [
+        "itemSubType",
+        "magical"
+      ],
+      "properties": {
+        "itemBaseType": {
+          "type": "string",
+          "const": "ITEM_BASE_TYPE_AMMO"
+        },
+        "itemSubType": {
+          "description": "type d'objet",
+          "type": "string",
+          "pattern": "^AMMO_TYPE_[_A-Z0-9]+$"
+        },
+        "magical": {
+          "description": "une munition qui ignore la résistance permet de blesser les bestiole naturellement immunisée aux munitions non-magiques",
+          "type": "boolean"
+        }
+      }
+    },
+    {
+      "required": [
+        "itemSubType"
+      ],
+      "properties": {
+        "itemBaseType": {
+          "type": "string",
+          "const": "ITEM_BASE_TYPE_SHIELD"
+        },
+        "itemSubType": {
+          "description": "type d'objet",
+          "type": "string",
+          "pattern": "^SHIELD_TYPE_[_A-Z0-9]+$"
+        }
+      }
+    },
+    {
+      "properties": {
+        "itemBaseType": {
+          "type": "string",
+          "not": {
+            "enum": [
+              "ITEM_BASE_TYPE_WEAPON",
+              "ITEM_BASE_TYPE_ARMOR",
+              "ITEM_BASE_TYPE_SHIELD",
+              "ITEM_BASE_TYPE_AMMO"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

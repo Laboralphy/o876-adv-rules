@@ -1,0 +1,20 @@
+WEAPON_ATTRIBUTE_AMMUNITION
+Les armes qui nécessitent des munitions pour fonctionner doit avoir cet attribut.
+
+WEAPON_ATTRIBUTE_FINESSE
+Les armes suffisament légères peuvent exploiter la dextérité plutôt que la force pour calculer les jets d'attaque
+
+WEAPON_ATTRIBUTE_HEAVY
+Les armes lourdes maniées par les créatures de taille small et moindre déclenche un désavantage.
+
+
+
+
+  "WEAPON_ATTRIBUTE_LIGHT": "WEAPON_ATTRIBUTE_LIGHT",
+  "WEAPON_ATTRIBUTE_LOADING": "WEAPON_ATTRIBUTE_LOADING",
+  "WEAPON_ATTRIBUTE_SPECIAL": "WEAPON_ATTRIBUTE_SPECIAL",
+  "WEAPON_ATTRIBUTE_THROWN": "WEAPON_ATTRIBUTE_THROWN",
+  "WEAPON_ATTRIBUTE_TWO_HANDED": "WEAPON_ATTRIBUTE_TWO_HANDED",
+  "WEAPON_ATTRIBUTE_VERSATILE": "WEAPON_ATTRIBUTE_VERSATILE",
+  "WEAPON_ATTRIBUTE_REACH": "WEAPON_ATTRIBUTE_REACH"
+}

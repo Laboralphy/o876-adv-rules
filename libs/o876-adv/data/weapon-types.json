@@ -1,10 +1,12 @@
 {
   "WEAPON_TYPE_CLUB": {
+    "cost": 1,
     "damage": "1d4",
-    "damageTypes": ["DAMAGE_TYPE_CRUSHING"],
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
     "weight": 2,
     "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
-    "equipSlots": ["EQUIPMENT_SLOT_PRIMARY_HAND", "EQUIPMENT_SLOT_SECONDARY_HAND"],
+    "ranged": false,
     "attributes": [
       "WEAPON_ATTRIBUTE_LIGHT"
     ]

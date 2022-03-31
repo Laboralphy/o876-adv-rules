@@ -1,0 +1,230 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "description": "Structure de définition d'un blueprint de créature",
+  "additionalProperties": false,
+  "required": [
+    "entityType",
+    "specie",
+    "gender",
+    "size",
+    "ac",
+    "speed",
+    "classes",
+    "abilities",
+    "proficiencies",
+    "skills",
+    "feats",
+    "alignment",
+    "equipment"
+  ],
+  "properties": {
+    "entityType": {
+      "description": "type d'entité ENTITY_TYPE_*",
+      "type": "string",
+      "const":"ENTITY_TYPE_ACTOR"
+    },
+    "specie": {
+      "description": "espèce à laquelle appartient la créature SPECIE_*",
+      "type": "string",
+      "pattern": "^SPECIE_[_A-Z0-9]+$"
+    },
+    "gender": {
+      "description": "genre auquel appartient la créature GENDER_*. la plupart des monstres n'auront pas de genre (GENDER_NONE)",
+      "type": "string",
+      "enum": [
+        "GENDER_MALE",
+        "GENDER_FEMALE",
+        "GENDER_NONE"
+      ]
+    },
+    "size": {
+      "description": "CREATURE_SIZE_*",
+      "type": "string",
+      "enum": [
+        "CREATURE_SIZE_COLOSSAL",
+        "CREATURE_SIZE_GARGANTUAN",
+        "CREATURE_SIZE_HUGE",
+        "CREATURE_SIZE_LARGE",
+        "CREATURE_SIZE_MEDIUM",
+        "CREATURE_SIZE_SMALL",
+        "CREATURE_SIZE_TINY",
+        "CREATURE_SIZE_DIMINUTIVE",
+        "CREATURE_SIZE_FINE"
+      ]
+    },
+    "ac": {
+      "description": "classe d'armure naturelle qui sera prise en compte si la créature ne porte pas d'armure",
+      "type": "number"
+    },
+    "speed": {
+      "description": "indication de la vitesse de déplacement",
+      "type": "number"
+    },
+    "classes": {
+      "description": "liste des classes de l'acteur",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "class",
+          "level"
+        ],
+        "properties": {
+          "class": {
+            "description": "label de la classe CLASS_*",
+            "type": "string",
+            "pattern": "^CLASS_[_A-Z0-9]+$"
+          },
+          "level": {
+            "description": "niveau dans cette classe",
+            "type": "number"
+          }
+        }
+      }
+    },
+    "abilities": {
+      "description": "liste des caractéristiques",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "ability",
+          "value"
+        ],
+        "properties": {
+          "ability": {
+            "description": "ABILITY_*",
+            "type": "string",
+            "pattern": "^ABILITY_[_A-Z0-9]+$"
+          },
+          "value": {
+            "description": "valeur numérique de la caractéristique",
+            "type": "number"
+          }
+        }
+      }
+    },
+    "proficiencies": {
+      "description": "liste des proficiencies de la creature",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^PROFICIENCY_[._A-Z0-9]+$"
+      }
+    },
+    "skills": {
+      "description": "liste des talents de la créature",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "skill",
+          "value"
+        ],
+        "properties": {
+          "skill": {
+            "type": "string",
+            "pattern": "^SKILL_[_A-Z0-9]+$"
+          },
+          "value": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "feats": {
+      "description": "liste des dons de la créature",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^FEAT_[._A-Z0-9]+$"
+      }
+    },
+    "alignment": {
+      "description": "ALIGNMENT_*",
+      "type": "string",
+      "enum": [
+        "ALIGNMENT_LAWFUL_GOOD",
+        "ALIGNMENT_LAWFUL_NEUTRAL",
+        "ALIGNMENT_LAWFUL_EVIL",
+        "ALIGNMENT_NEUTRAL_GOOD",
+        "ALIGNMENT_TRUE_NEUTRAL",
+        "ALIGNMENT_NEUTRAL_EVIL",
+        "ALIGNMENT_CHOTIC_GOOD",
+        "ALIGNMENT_CHOTIC_NEUTRAL",
+        "ALIGNMENT_CHOTIC_EVIL"
+      ]
+    },
+    "equipment": {
+      "description": "objets equippés",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slot",
+          "item"
+        ],
+        "properties": {
+          "slot": {
+            "type": "string",
+            "enum": [
+              "EQUIPMENT_SLOT_ARMS",
+              "EQUIPMENT_SLOT_AMMO",
+              "EQUIPMENT_SLOT_BELT",
+              "EQUIPMENT_SLOT_BOOTS",
+              "EQUIPMENT_SLOT_CARMOR",
+              "EQUIPMENT_SLOT_CHEST",
+              "EQUIPMENT_SLOT_CLOAK",
+              "EQUIPMENT_SLOT_CWEAPON_B",
+              "EQUIPMENT_SLOT_CWEAPON_L",
+              "EQUIPMENT_SLOT_CWEAPON_R",
+              "EQUIPMENT_SLOT_HEAD",
+              "EQUIPMENT_SLOT_LEFTCHARM",
+              "EQUIPMENT_SLOT_SHIELD",
+              "EQUIPMENT_SLOT_LEFTRING",
+              "EQUIPMENT_SLOT_NECK",
+              "EQUIPMENT_SLOT_RIGHTCHARM",
+              "EQUIPMENT_SLOT_WEAPON_MELEE",
+              "EQUIPMENT_SLOT_RIGHTRING"
+            ]
+          },
+          "item": {
+            "description": "blueprint de l'item",
+            "type": "string"
+          },
+          "stack": {
+            "description": "nombre d'exemplaire (item stackable)",
+            "type": "number"
+          }
+        }
+      }
+    },
+    "actions": {
+      "description": "liste des actions possibles",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "description": "SPELL_*",
+            "type": "string",
+            "pattern": "^SPELL_[_A-Z0-9]+$"
+          },
+          "count": {
+            "description": "nombre de fois que la créature peut utiliser cette action",
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}
