@@ -1,0 +1,64 @@
+{
+  "entityType": "ENTITY_TYPE_ACTOR",
+  "specie": "SPECIE_HUMANOID",
+  "gender": "GENDER_MALE",
+  "size": "CREATURE_SIZE_MEDIUM",
+  "speed": 30,
+  "ac": 10,
+  "feats": [
+  ],
+  "skills": [
+  ],
+  "classes": [
+    {
+      "class": "CLASS_TOURIST",
+      "level": 1
+    }
+  ],
+  "abilities": [
+    {
+      "ability":"ABILITY_STRENGTH",
+      "value": 10
+    },
+    {
+      "ability":"ABILITY_DEXTERITY",
+      "value": 10
+    },
+    {
+      "ability":"ABILITY_CONSTITUTION",
+      "value": 10
+    },
+    {
+      "ability":"ABILITY_INTELLIGENCE",
+      "value": 10
+    },
+    {
+      "ability":"ABILITY_WISDOM",
+      "value": 10
+    },
+    {
+      "ability":"ABILITY_CHARISMA",
+      "value": 10
+    }
+  ],
+  "proficiencies": [
+    "PROFICIENCY_ARMOR_LIGHT",
+    "PROFICIENCY_SHIELD",
+    "PROFICIENCY_WEAPON_SIMPLE"
+  ],
+  "alignment": "ALIGNMENT_TRUE_NEUTRAL",
+  "equipment": [
+    {
+      "slot": "EQUIPMENT_SLOT_CHEST",
+      "item": "arm-leather"
+    },
+    {
+      "slot": "EQUIPMENT_SLOT_WEAPON_MELEE",
+      "item": "wpn-dagger"
+    },
+    {
+      "slot": "EQUIPMENT_SLOT_ARMS",
+      "item": "eqp-gloves"
+    }
+  ]
+}

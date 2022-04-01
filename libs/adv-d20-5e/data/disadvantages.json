@@ -1,0 +1,95 @@
+{
+  "DIS_RULE_HEAVILY_ENCUMBERED": {
+    "description": "triggers disadvantage on all rolls, for str, dex, con, when heavily or fully encumbered, ",
+    "type": "DISADVANTAGE",
+    "abilities": ["ABILITY_STRENGTH", "ABILITY_DEXTERITY", "ABILITY_CONSTITUTION"],
+    "skills": null,
+    "rollTypes": ["ROLL_TYPE_ATTACK", "ROLL_TYPE_SAVE", "ROLL_TYPE_CHECK"],
+    "saveTypes": null,
+    "conditions": ["d20-ad-subject-heavily-encumbered"]
+  },
+  "DIS_RULE_UNPROF_ARMOR": {
+    "description": "triggers disadvantage on all rolls, for str, dex, when wearing armor without proficiency",
+    "type": "DISADVANTAGE",
+    "abilities": ["ABILITY_STRENGTH", "ABILITY_DEXTERITY"],
+    "skills": null,
+    "rollTypes": ["ROLL_TYPE_ATTACK", "ROLL_TYPE_SAVE", "ROLL_TYPE_CHECK"],
+    "saveTypes": null,
+    "conditions": ["d20-ad-subject-wearing-unprof-armor"]
+  },
+  "DIS_RULE_UNSEEN_TARGET": {
+    "description": "when attacking unseen target (target invisible, target hidden in shadows or if subject is blinded), triggers disadvantage on attack for all abilities",
+    "type": "DISADVANTAGE",
+    "abilities": [
+      "ABILITY_STRENGTH",
+      "ABILITY_DEXTERITY",
+      "ABILITY_CONSTITUTION",
+      "ABILITY_INTELLIGENCE",
+      "ABILITY_WISDOM",
+      "ABILITY_CHARISMA"
+    ],
+    "skills": null,
+    "rollTypes": ["ROLL_TYPE_ATTACK"],
+    "saveTypes": null,
+    "conditions": ["d20-ad-target-unseen"]
+  },
+  "DIS_RULE_POINT_BLANK": {
+    "description": "when attacking w/ ranged or spell (any ability), and target is too close, triggers disadvantage for attack roll",
+    "type": "DISADVANTAGE",
+    "abilities": [
+      "ABILITY_STRENGTH",
+      "ABILITY_DEXTERITY",
+      "ABILITY_CONSTITUTION",
+      "ABILITY_INTELLIGENCE",
+      "ABILITY_WISDOM",
+      "ABILITY_CHARISMA"
+    ],
+    "skills": null,
+    "rollTypes": ["ROLL_TYPE_ATTACK"],
+    "saveTypes": null,
+    "conditions": ["d20-ad-subject-ranged-attack", "d20-ad-target-too-close", "d20-ad-subject-detected-by-target", "d20-ad-target-not-incapacitated"]
+  },
+  "DIS_RULE_NON_STEALTH_ARMOR": {
+    "description": "wearing a non-stealth armor triggers disadvantage on stealth check",
+    "type": "DISADVANTAGE",
+    "abilities": null,
+    "skills": ["SKILL_STEALTH"],
+    "rollTypes": ["ROLL_TYPE_CHECK"],
+    "saveTypes": null,
+    "conditions": ["d20-ad-subject-wearing-non-stealth-armor"]
+  },
+  "DIS_RULE_SMALL_CREATURE_USING_HEAVY_WEAPON": {
+    "description": "small creature using heavy weapon have disadvantage on attack rolls",
+    "type": "DISADVANTAGE",
+    "abilities": [
+      "ABILITY_STRENGTH",
+      "ABILITY_DEXTERITY",
+      "ABILITY_CONSTITUTION",
+      "ABILITY_INTELLIGENCE",
+      "ABILITY_WISDOM",
+      "ABILITY_CHARISMA"
+    ],
+    "rollTypes": ["ROLL_TYPE_ATTACK"],
+    "saveTypes": null,
+    "skills": null,
+    "conditions": ["d20-ad-subject-small", "d20-ad-subject-weapon-heavy"]
+  },
+  "DIS_RULE_FRIGHTENED": {
+    "description": "when having fear effect, apply disadvantage to attack and check roll (any ability & any skill) when target is the source of fear effect",
+    "type": "DISADVANTAGE",
+    "ability": null,
+    "rollTypes": ["ROLL_TYPE_ATTACK", "ROLL_TYPE_CHECK"],
+    "saveTypes": null,
+    "skills": null,
+    "conditions": ["d20-ad-subject-frightened-by-target"]
+  },
+  "DIS_RULE_POISONED": {
+    "description": "when poisoned, apply disadvantage to all attack rolls",
+    "type": "DISADVANTAGE",
+    "ability": null,
+    "rollTypes": ["ROLL_TYPE_ATTACK"],
+    "saveTypes": null,
+    "skills": null,
+    "conditions": ["d20-ad-subject-poisoned"]
+  }
+}

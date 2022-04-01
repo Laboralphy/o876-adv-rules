@@ -1,0 +1,24 @@
+#!/bin/bash
+
+generate () {
+  local sPrefix="$1"
+  local sInputFile="$2"
+  local sOutputFile="$3"
+  local i
+  echo generate const file $sOutputFile
+  echo "module.exports = {" > "$sOutputFile"
+  for i in $(grep -oE "${sPrefix}_[_A-Z0-9]+" $sInputFile)
+  do
+    echo "  $i: '$i'," >> "$sOutputFile"
+  done
+  echo "}" >> "$sOutputFile"
+}
+
+generate EFFECT effects.js consts/effects.js
+generate ITEM_PROPERTY item-properties.js consts/item-properties.js
+generate ITEM_BASE_TYPE data/item-base-types.json consts/item-base-types.js
+generate SKILL data/skills.json consts/skills.js
+generate FEAT data/feats.json consts/feats.js
+generate CREATURE_SIZE data/sizes.json consts/sizes.js
+generate WEAPON_TYPE data/weapon-types.json consts/weapon-types.js
+echo "done"

@@ -1,0 +1,16 @@
+SPECIE_ABERRATION: aberrations, aliens, et horreurs cosmiques : tyranoeil, aboleth, mimic, dévoreur mental, aliens, créature pseudo naturelles...
+SPECIE_BEAST: animaux normaux ou primitifs : loup, chauve souris, rat, tigre, ours, dinosaures...
+SPECIE_CELESTIAL: créatures natives des plans célestes (anges, pégases, planétars, solaires...)
+SPECIE_CONSTRUCT: créatures mécaniques et artificielles : golems, robots, horreur casquée, épées animées
+SPECIE_DRAGON: dragons, wyvernes
+SPECIE_ELEMENTAL: élémentaires de feu, glace, eau, djinn, assassin invisible
+SPECIE_FEY: créature connectée à la nature : féé, dryade, nymphe, grig, nixe, satyre...
+SPECIE_FIENDS: créatures natives des plans infernaux (démons, diable, succube, rakshasa, yugoloth, chiens de l'enfer...)
+SPECIE_GIANT: humanoides géants : troll, ogres, géants, ettins...
+SPECIE_HUMANOID: humain, elfe, nain, gnome, orque, gobelin, gobelours, hobgobelin
+SPECIE_MAGICAL_BEAST: animaux créés par magie : chien éclipsant, licorne
+SPECIE_MONSTROSITY: créatures monstrueuses issues d'expériences, de malédictions, de mutations, (loup-garou, minotaure, yuan-ti)
+SPECIE_OOZE: créatures sans consistence solide : blobs, gelée, cube gélatineux
+SPECIE_PLANT: végétaux doués d'animation : myconide, treant
+SPECIE_UNDEAD: mort vivants en tout genre : zombie, vampire, liche, fantôme, goules, squelettes
+SPECIE_VERMIN: divers arthropodes et vers : vers, araignées, charognard, myriapodes, insectes, scarabées etc...

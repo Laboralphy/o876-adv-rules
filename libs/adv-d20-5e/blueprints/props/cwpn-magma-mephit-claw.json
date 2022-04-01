@@ -1,0 +1,11 @@
+{
+  "entityType": "ENTITY_TYPE_ITEM",
+  "itemBaseType": "ITEM_BASE_TYPE_CREATUREWEAPON",
+  "damage": "1d4+1",
+  "damageType": "DAMAGE_TYPE_SLASHING",
+  "properties": [{
+    "property": "ITEM_PROPERTY_DAMAGE_MODIFIER",
+    "value": "1d4",
+    "type": "DAMAGE_TYPE_FIRE"
+  }]
+}

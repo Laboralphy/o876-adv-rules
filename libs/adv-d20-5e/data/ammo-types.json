@@ -1,0 +1,11 @@
+{
+  "AMMO_TYPE_ARROW": {
+    "weight": 0.066
+  },
+  "AMMO_TYPE_BOLT": {
+    "weight": 0.08
+  },
+  "AMMO_TYPE_BULLET": {
+    "weight": 0.11
+  }
+}

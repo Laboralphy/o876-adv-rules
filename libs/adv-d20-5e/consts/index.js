@@ -1,0 +1,22 @@
+module.exports = {
+    ...require('./abilities.json'),
+    ...require('./alignments.json'),
+    ...require('./ammo-types.json'),
+    ...require('./armor-types.json'),
+    ...require('./damage-types.json'),
+    ...require('./effects.json'),
+    ...require('./entity-types.json'),
+    ...require('./equipment-slots.json'),
+    ...require('./feats.json'),
+    ...require('./genders.json'),
+    ...require('./index.js'),
+    ...require('./item-base-types.json'),
+    ...require('./item-properties.json'),
+    ...require('./proficiencies.json'),
+    ...require('./shield-types.json'),
+    ...require('./sizes.json'),
+    ...require('./skills.json'),
+    ...require('./species.json'),
+    ...require('./weapon-attributes.json'),
+    ...require('./weapon-types.json')
+}

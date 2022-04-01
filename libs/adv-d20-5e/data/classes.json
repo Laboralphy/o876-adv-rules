@@ -1,0 +1,21 @@
+{
+  "CLASS_MONSTER": {
+    "hitDie": 0,
+    "proficiencies": []
+  },
+  "CLASS_TOURIST": {
+    "hitDie": 6,
+    "proficiencies": []
+  },
+  "CLASS_FIGHTER": {
+    "hitDie": 10,
+    "proficiencies": [
+      "PROFICIENCY_ARMOR_LIGHT",
+      "PROFICIENCY_ARMOR_MEDIUM",
+      "PROFICIENCY_ARMOR_HEAVY",
+      "PROFICIENCY_SHIELD",
+      "PROFICIENCY_WEAPON_SIMPLE",
+      "PROFICIENCY_WEAPON_MARTIAL"
+    ]
+  }
+}

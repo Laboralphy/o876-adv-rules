@@ -1,0 +1,7 @@
+{
+  "entityType": "ENTITY_TYPE_ITEM",
+  "itemBaseType": "ITEM_BASE_TYPE_AMMO",
+  "itemSubType": "AMMO_TYPE_ARROW",
+  "magical": false,
+  "properties": []
+}

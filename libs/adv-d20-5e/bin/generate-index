@@ -1,0 +1,17 @@
+#!/bin/bash
+echo indexing resources
+if [ -z "$NODE" ]
+then
+  NODE=node
+fi
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+$NODE "$SCRIPT_DIR"/blueprint-index-generator.js ./blueprints/actors > ./blueprints-actors.js
+$NODE "$SCRIPT_DIR"/blueprint-index-generator.js ./blueprints/items > ./blueprints-items.js
+$NODE "$SCRIPT_DIR"/blueprint-index-generator.js ./blueprints/props > ./blueprints-props.js
+$NODE "$SCRIPT_DIR"/module-index-generator.js ./item-properties ITEM_PROPERTY_ > ./item-properties.js
+$NODE "$SCRIPT_DIR"/module-index-generator.js ./effects EFFECT_ > ./effects.js
+$NODE "$SCRIPT_DIR"/module-index-generator.js ./schemas "" > ./schemas.js
+$NODE "$SCRIPT_DIR"/module-index-generator.js ./data "" > ./data.js
+$NODE "$SCRIPT_DIR"/blueprint-index-generator.js ./scripts > ./scripts.js
+echo done

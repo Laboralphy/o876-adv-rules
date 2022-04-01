@@ -1,0 +1,6 @@
+{
+  "entityType": "ENTITY_TYPE_ITEM",
+  "itemBaseType": "ITEM_BASE_TYPE_ARMOR",
+  "itemSubType": "ARMOR_TYPE_PADDED",
+  "properties": []
+}

@@ -1,0 +1,200 @@
+{
+  "ITEM_BASE_TYPE_CREATUREARMOR": {
+    "weight": 0,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_CARMOR"]
+  },
+  "ITEM_BASE_TYPE_CREATUREWEAPON": {
+    "cost": 0,
+    "damageVersatile": null,
+    "proficiency": "",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_FINESSE",
+      "WEAPON_ATTRIBUTE_LIGHT"
+    ],
+    "weight": 0,
+    "stackable": false,
+    "equipSlots": [
+      "EQUIPMENT_SLOT_CWEAPON_R",
+      "EQUIPMENT_SLOT_CWEAPON_L",
+      "EQUIPMENT_SLOT_CWEAPON_B"
+    ]
+  },
+  "ITEM_BASE_TYPE_WEAPON": {
+    "stackable": false,
+    "dataType": "WEAPON_TYPES",
+    "equipSlots": [
+      "EQUIPMENT_SLOT_WEAPON_MELEE",
+      "EQUIPMENT_SLOT_WEAPON_2ND_MELEE",
+      "EQUIPMENT_SLOT_WEAPON_RANGED"
+    ]
+  },
+  "ITEM_BASE_TYPE_AMMO": {
+    "stackable": true,
+    "dataType": "AMMO_TYPES",
+    "equipSlots": ["EQUIPMENT_SLOT_AMMO"]
+  },
+  "ITEM_BASE_TYPE_ARMOR": {
+    "stackable": false,
+    "dataType": "ARMOR_TYPES",
+    "equipSlots": ["EQUIPMENT_SLOT_CHEST"]
+  },
+  "ITEM_BASE_TYPE_SHIELD": {
+    "stackable": false,
+    "dataType": "SHIELD_TYPES",
+    "equipSlots": ["EQUIPMENT_SLOT_SHIELD"]
+  },
+  "ITEM_BASE_TYPE_HELM": {
+    "weight": 2,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_HEAD"]
+  },
+  "ITEM_BASE_TYPE_AMULET": {
+    "weight": 0.5,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_NECK"]
+  },
+  "ITEM_BASE_TYPE_CLOAK": {
+    "weight": 3,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_CLOAK"]
+  },
+  "ITEM_BASE_TYPE_BRACER": {
+    "weight": 0.1,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_ARMS"]
+  },
+  "ITEM_BASE_TYPE_GLOVES": {
+    "weight": 1,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_ARMS"]
+  },
+  "ITEM_BASE_TYPE_RING": {
+    "weight": 0.1,
+    "stackable": false,
+    "equipSlots": [
+      "EQUIPMENT_SLOT_RIGHTRING",
+      "EQUIPMENT_SLOT_LEFTRING"
+    ]
+  },
+  "ITEM_BASE_TYPE_BELT": {
+    "weight": 0.1,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_BELT"]
+  },
+  "ITEM_BASE_TYPE_BOOTS": {
+    "weight": 0.5,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_BOOTS"]
+  },
+  "ITEM_BASE_TYPE_TORCH": {
+    "weight": 0.1,
+    "stackable": false,
+    "equipSlots": ["EQUIPMENT_SLOT_SHIELD"]
+  },
+  "ITEM_BASE_TYPE_HEALERSKIT": {
+    "weight": 0.5,
+    "stackable": true
+  },
+  "ITEM_BASE_TYPE_MAGICROD": {
+    "weight": 2,
+    "stackable": false,
+    "equipSlots": [
+      "EQUIPMENT_SLOT_WEAPON_MELEE",
+      "EQUIPMENT_SLOT_WEAPON_2ND_MELEE"
+    ]
+  },
+  "ITEM_BASE_TYPE_MAGICWAND": {
+    "weight": 1,
+    "stackable": false,
+    "equipSlots": [
+      "EQUIPMENT_SLOT_WEAPON_MELEE",
+      "EQUIPMENT_SLOT_WEAPON_2ND_MELEE"
+    ]
+  },
+  "ITEM_BASE_TYPE_POTION": {
+    "weight": 0.3,
+    "stackable": true
+  },
+  "ITEM_BASE_TYPE_THIEVESTOOLS": {
+    "weight": 0.5,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_DISARMKIT": {
+    "weight": 0.5,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_KEY": {
+    "weight": 0.1,
+    "stackable": false,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_BOX": {
+    "weight": 1,
+    "stackable": false,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_BAG": {
+    "weight": 1,
+    "stackable": false,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_BOOK": {
+    "weight": 1,
+    "stackable": false,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_SCROLL": {
+    "weight": 0.05,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_GOLD": {
+    "weight": 0.022,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_GEM": {
+    "weight": 0.0011,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_GRENADE": {
+    "weight": 0.3,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_ENCAMPMENT": {
+    "weight": 50,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_CREATUREITEM": {
+    "weight": 0.5,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_CRAFTMATERIAL": {
+    "weight": 0.3,
+    "stackable": true,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_MISCSMALL": {
+    "weight": 0.1,
+    "stackable": false,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_MISCMEDIUM": {
+    "weight": 0.3,
+    "stackable": false,
+    "equipSlots": []
+  },
+  "ITEM_BASE_TYPE_MISCLARGE": {
+    "weight": 0.5,
+    "stackable": false,
+    "equipSlots": []
+  }
+}

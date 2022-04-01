@@ -1,0 +1,66 @@
+{
+  "entityType": "ENTITY_TYPE_ACTOR",
+  "specie": "SPECIE_ELEMENTAL",
+  "gender": "GENDER_NONE",
+  "size": "CREATURE_SIZE_SMALL",
+  "speed": 30,
+  "ac": 10,
+  "feats": [
+  ],
+  "skills": [
+    {
+      "skill": "SKILL_STEALTH",
+      "value": 3
+    }
+  ],
+  "classes": [
+    {
+      "class": "CLASS_MONSTER",
+      "level": 5
+    }
+  ],
+  "abilities": [
+    {
+      "ability":"ABILITY_STRENGTH",
+      "value": 8
+    },
+    {
+      "ability":"ABILITY_DEXTERITY",
+      "value": 12
+    },
+    {
+      "ability":"ABILITY_CONSTITUTION",
+      "value": 12
+    },
+    {
+      "ability":"ABILITY_INTELLIGENCE",
+      "value": 7
+    },
+    {
+      "ability":"ABILITY_WISDOM",
+      "value": 10
+    },
+    {
+      "ability":"ABILITY_CHARISMA",
+      "value": 10
+    }
+  ],
+  "proficiencies": [
+  ],
+  "alignment": "ALIGNMENT_NEUTRAL_EVIL",
+  "equipment": [
+    {
+      "slot": "EQUIPMENT_SLOT_CARMOR",
+      "item": "carm-magma-mephit-props"
+    },
+    {
+      "slot": "EQUIPMENT_SLOT_CWEAPON_R",
+      "item": "cwpn-magma-mephit-claw"
+    }
+  ],
+  "actions": [
+    {
+      "id": "SPELL_FIRE_BREATH"
+    }
+  ]
+}

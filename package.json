@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "adv-d20-5e:gen:index:const": "cd libs/adv-d20-5e; bash ./bin/generate-index ; ./bin/generate-const",
+    "test": "jasmine tests/*Test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@laboralphy/did-you-mean": "^2.1.0",
     "jasmine": "^4.0.2",
     "jsonschema": "^1.4.0"
   }

@@ -1,0 +1,29 @@
+{
+  "ADV_RULE_SURPRISE_ATTACK": {
+    "description": "grants advantage on attack rolls (any ability) when attacking a target that is not aware of attacker's presence",
+    "type": "ADVANTAGE",
+    "abilities": null,
+    "skills": null,
+    "rollTypes": ["ROLL_TYPE_ATTACK"],
+    "saveTypes": null,
+    "conditions": ["d20-ad-subject-undetected-by-target"]
+  },
+  "ADV_RULE_CHARMED_TARGET": {
+    "description": "grants advantage when using charisma based skills against charmed creature",
+    "type": "ADVANTAGE",
+    "abilities": ["ATTRIBUTE_CHARISMA"],
+    "skills": null,
+    "rollTypes": ["ROLL_TYPE_CHECK"],
+    "saveTypes": null,
+    "conditions": ["d20-ad-subject-charming-target"]
+  },
+  "ADV_RULE_MAGIC_RESISTANCE": {
+    "description": "grants advantage on saving throws against spells when having magic_resistance effect",
+    "type": "ADVANTAGE",
+    "abilities": null,
+    "skills": null,
+    "rollTypes": ["ROLL_TYPE_SAVE"],
+    "saveTypes": ["SAVE_TYPE_SPELL"],
+    "conditions": ["d20-ad-subject-magic-resistance"]
+  }
+}

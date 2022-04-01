@@ -1,0 +1,32 @@
+{
+  "CREATURE_SIZE_TINY": {
+    "hitDie": 4,
+    "space": 2.5,
+    "carryingCapacity": 0.25
+  },
+  "CREATURE_SIZE_SMALL": {
+    "hitDie": 6,
+    "space": 5,
+    "carryingCapacity": 0.5
+  },
+  "CREATURE_SIZE_MEDIUM": {
+    "hitDie": 8,
+    "space": 5,
+    "carryingCapacity": 1
+  },
+  "CREATURE_SIZE_LARGE": {
+    "hitDie": 10,
+    "space": 10,
+    "carryingCapacity": 2
+  },
+  "CREATURE_SIZE_HUGE": {
+    "hitDie": 12,
+    "space": 15,
+    "carryingCapacity": 4
+  },
+  "CREATURE_SIZE_GARGANTUAN": {
+    "hitDie": 20,
+    "space": 20,
+    "carryingCapacity": 8
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "SPELL_FIRE_BREATH": {
+    "school": "SCHOOL_EVOCATION",
+    "range": 15,
+    "targetType": ["TARGET_TYPE_CREATURE"],
+    "categories": ["SPELL_CATEGORY_FIRE"],
+    "level": 1,
+    "script": "d20-s1-fire-breath",
+    "nature": ["SPELL_NATURE_INNATE"],
+    "description": "The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.",
+    "concentration": false,
+    "projectile": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "entityType": "ENTITY_TYPE_ITEM",
+  "itemBaseType": "ITEM_BASE_TYPE_CREATUREARMOR",
+  "properties": [{
+    "property": "ITEM_PROPERTY_DAMAGE_IMMUNITY",
+    "type": "DAMAGE_TYPE_FIRE",
+    "value": 1
+  }, {
+    "property": "ITEM_PROPERTY_DAMAGE_IMMUNITY",
+    "type": "DAMAGE_TYPE_COLD",
+    "value": -1
+  }]
+}

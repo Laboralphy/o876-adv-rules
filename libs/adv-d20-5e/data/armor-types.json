@@ -1,0 +1,119 @@
+{
+  "ARMOR_TYPE_CLOTHING": {
+    "cost": 1,
+    "ac": 10,
+    "proficiency": "",
+    "maxDexterityModifier": null,
+    "requiredStrength": null,
+    "disadvantages": [],
+    "weight": 4
+  },
+  "ARMOR_TYPE_PADDED": {
+    "cost": 5,
+    "ac": 11,
+    "proficiency": "PROFICIENCY_ARMOR_LIGHT",
+    "maxDexterityModifier": null,
+    "requiredStrength": null,
+    "disadvantages": ["SKILL_STEALTH"],
+    "weight": 8
+  },
+  "ARMOR_TYPE_LEATHER": {
+    "cost": 10,
+    "ac": 11,
+    "proficiency": "PROFICIENCY_ARMOR_LIGHT",
+    "maxDexterityModifier": null,
+    "requiredStrength": null,
+    "disadvantages": [],
+    "weight": 10
+  },
+  "ARMOR_TYPE_STUDDED_LEATHER": {
+    "cost": 45,
+    "ac": 12,
+    "proficiency": "PROFICIENCY_ARMOR_LIGHT",
+    "maxDexterityModifier": null,
+    "requiredStrength": null,
+    "disadvantages": [],
+    "weight": 13
+  },
+  "ARMOR_TYPE_HIDE": {
+    "cost": 10,
+    "ac": 12,
+    "proficiency": "PROFICIENCY_ARMOR_MEDIUM",
+    "maxDexterityModifier": 2,
+    "requiredStrength": null,
+    "disadvantages": [],
+    "weight": 12
+  },
+  "ARMOR_TYPE_CHAIN_SHIRT": {
+    "cost": 50,
+    "ac": 13,
+    "proficiency": "PROFICIENCY_ARMOR_MEDIUM",
+    "maxDexterityModifier": 2,
+    "requiredStrength": null,
+    "disadvantages": [],
+    "weight": 20
+  },
+  "ARMOR_TYPE_SCALE_MAIL": {
+    "cost": 50,
+    "ac": 14,
+    "proficiency": "PROFICIENCY_ARMOR_MEDIUM",
+    "maxDexterityModifier": 2,
+    "requiredStrength": null,
+    "disadvantages": ["SKILL_STEALTH"],
+    "weight": 45
+  },
+  "ARMOR_TYPE_BREASTPLATE": {
+    "cost": 400,
+    "ac": 14,
+    "proficiency": "PROFICIENCY_ARMOR_MEDIUM",
+    "maxDexterityModifier": 2,
+    "requiredStrength": null,
+    "disadvantages": [],
+    "weight": 20
+  },
+  "ARMOR_TYPE_HALF_PLATE": {
+    "cost": 750,
+    "ac": 15,
+    "proficiency": "PROFICIENCY_ARMOR_MEDIUM",
+    "maxDexterityModifier": 2,
+    "requiredStrength": null,
+    "disadvantages": ["SKILL_STEALTH"],
+    "weight": 40
+  },
+  "ARMOR_TYPE_RING_MAIL": {
+    "cost": 30,
+    "ac": 14,
+    "proficiency": "PROFICIENCY_ARMOR_HEAVY",
+    "maxDexterityModifier": 0,
+    "requiredStrength": null,
+    "disadvantages": ["SKILL_STEALTH"],
+    "weight": 40
+  },
+  "ARMOR_TYPE_CHAIN_MAIL": {
+    "cost": 75,
+    "ac": 16,
+    "proficiency": "PROFICIENCY_ARMOR_HEAVY",
+    "maxDexterityModifier": 0,
+    "requiredStrength": 13,
+    "disadvantages": ["SKILL_STEALTH"],
+    "weight": 55
+  },
+  "ARMOR_TYPE_SPLINT": {
+    "cost": 200,
+    "ac": 17,
+    "proficiency": "PROFICIENCY_ARMOR_HEAVY",
+    "maxDexterityModifier": 0,
+    "requiredStrength": 15,
+    "disadvantages": ["SKILL_STEALTH"],
+    "weight": 60
+  },
+  "ARMOR_TYPE_PLATE": {
+    "cost": 1500,
+    "ac": 18,
+    "proficiency": "PROFICIENCY_ARMOR_HEAVY",
+    "maxDexterityModifier": 0,
+    "requiredStrength": 15,
+    "disadvantages": ["SKILL_STEALTH"],
+    "weight": 65
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "SHIELD_TYPE_NORMAL": {
+    "cost": 10,
+    "ac": 2,
+    "requiredStrength": null,
+    "stealth": "",
+    "weight": 6,
+    "proficiency": "PROFICIENCY_SHIELD"
+  }
+}

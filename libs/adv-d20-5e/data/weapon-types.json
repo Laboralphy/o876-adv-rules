@@ -1,0 +1,456 @@
+{
+  "WEAPON_TYPE_CLUB": {
+    "cost": 1,
+    "damage": "1d4",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_LIGHT"
+    ]
+  },
+  "WEAPON_TYPE_DAGGER": {
+    "cost": 2,
+    "damage": "1d4",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 1,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_LIGHT",
+      "WEAPON_ATTRIBUTE_FINESSE",
+      "WEAPON_ATTRIBUTE_THROWN"
+    ]
+  },
+  "WEAPON_TYPE_GREATCLUB": {
+    "cost": 1,
+    "damage": "1d8",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 10,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_HANDAXE": {
+    "cost": 5,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_LIGHT",
+      "WEAPON_ATTRIBUTE_THROWN"
+    ]
+  },
+  "WEAPON_TYPE_JAVELIN": {
+    "cost": 5,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_THROWN"
+    ]
+  },
+  "WEAPON_TYPE_LIGHT_HAMMER": {
+    "cost": 2,
+    "damage": "1d4",
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_LIGHT",
+      "WEAPON_ATTRIBUTE_THROWN"
+    ]
+  },
+  "WEAPON_TYPE_MACE": {
+    "cost": 5,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": []
+  },
+  "WEAPON_TYPE_QUATERSTAFF": {
+    "cost": 1,
+    "damage": "1d6",
+    "damageVersatile": "1d8",
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 4,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_VERSATILE"
+    ]
+  },
+  "WEAPON_TYPE_SICKLE": {
+    "cost": 1,
+    "damage": "1d4",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_LIGHT"
+    ]
+  },
+  "WEAPON_TYPE_SPEAR": {
+    "cost": 1,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 3,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_THROWN",
+      "WEAPON_ATTRIBUTE_VERSATILE"
+    ]
+  },
+  "WEAPON_TYPE_LIGHT_CROSSBOW": {
+    "cost": 25,
+    "damage": "1d8",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 5,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": true,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_AMMUNITION",
+      "WEAPON_ATTRIBUTE_LOADING",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_DART": {
+    "cost": 1,
+    "damage": "1d4",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 0.25,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": true,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_FINESSE",
+      "WEAPON_ATTRIBUTE_THROWN"
+    ]
+  },
+  "WEAPON_TYPE_SHORTBOW": {
+    "cost": 1,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": true,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_AMMUNITION",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_SLING": {
+    "cost": 1,
+    "damage": "1d4",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 0.1,
+    "proficiency": "PROFICIENCY_WEAPON_SIMPLE",
+    "ranged": true,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_AMUNITION"
+    ]
+  },
+  "WEAPON_TYPE_BATTLEAXE": {
+    "cost": 10,
+    "damage": "1d8",
+    "damageVersatile": "1d10",
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 4,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_VERSATILE"
+    ]
+  },
+  "WEAPON_TYPE_FLAIL": {
+    "cost": 10,
+    "damage": "1d8",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": []
+  },
+  "WEAPON_TYPE_GLAIVE": {
+    "cost": 20,
+    "damage": "1d10",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 6,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_HEAVY",
+      "WEAPON_ATTRIBUTE_REACH",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_GREATAXE": {
+    "cost": 30,
+    "damage": "1d12",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 7,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_HEAVY",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_GREATSWORD": {
+    "cost": 50,
+    "damage": "2d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 6,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_HEAVY",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_HALBERD": {
+    "cost": 20,
+    "damage": "1d10",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 6,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_HEAVY",
+      "WEAPON_ATTRIBUTE_REACH",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_LANCE": {
+    "cost": 10,
+    "damage": "1d12",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 6,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_REACH",
+      "WEAPON_ATTRIBUTE_SPECIAL"
+    ]
+  },
+  "WEAPON_TYPE_LONGSWORD": {
+    "cost": 15,
+    "damage": "1d8",
+    "damageVersatile": "1d10",
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 3,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_VERSATILE"
+    ]
+  },
+  "WEAPON_TYPE_MAUL": {
+    "cost": 10,
+    "damage": "2d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 10,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_HEAVY",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_MORNINGSTAR": {
+    "cost": 15,
+    "damage": "1d8",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 10,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": []
+  },
+  "WEAPON_TYPE_PIKE": {
+    "cost": 5,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 18,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_HEAVY",
+      "WEAPON_ATTRIBUTE_REACH",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_RAPIER": {
+    "cost": 25,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_FINESSE"
+    ]
+  },
+  "WEAPON_TYPE_SCIMITAR": {
+    "cost": 25,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 3,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_FINESSE",
+      "WEAPON_ATTRIBUTE_LIGHT"
+    ]
+  },
+  "WEAPON_TYPE_SHORTSWORD": {
+    "cost": 10,
+    "damage": "1d4",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_FINESSE",
+      "WEAPON_ATTRIBUTE_LIGHT"
+    ]
+  },
+  "WEAPON_TYPE_TRIDENT": {
+    "cost": 5,
+    "damage": "1d8",
+    "damageVersatile": "1d8",
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 4,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_THROWN",
+      "WEAPON_ATTRIBUTE_VERSATILE"
+    ]
+  },
+  "WEAPON_TYPE_WARPICK": {
+    "cost": 5,
+    "damage": "1d8",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": []
+  },
+  "WEAPON_TYPE_WARHAMMER": {
+    "cost": 15,
+    "damage": "1d8",
+    "damageVersatile": "1d10",
+    "damageType": "DAMAGE_TYPE_CRUSHING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_VERSATILE"
+    ]
+  },
+  "WEAPON_TYPE_WHIP": {
+    "cost": 2,
+    "damage": "1d4",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_SLASHING",
+    "weight": 3,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": false,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_FINESSE",
+      "WEAPON_ATTRIBUTE_REACH"
+    ]
+  },
+  "WEAPON_TYPE_BLOWGUN": {
+    "cost": 10,
+    "damage": "1",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 1,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": true,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_AMMUNITION",
+      "WEAPON_ATTRIBUTE_LOADING"
+    ]
+  },
+  "WEAPON_TYPE_HAND_CROSSBOW": {
+    "cost": 75,
+    "damage": "1d6",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 3,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": true,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_AMMUNITION",
+      "WEAPON_ATTRIBUTE_LOADING",
+      "WEAPON_ATTRIBUTE_LIGHT"
+    ]
+  },
+  "WEAPON_TYPE_HEAVY_CROSSBOW": {
+    "cost": 50,
+    "damage": "1d10",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 18,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": true,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_AMMUNITION",
+      "WEAPON_ATTRIBUTE_LOADING",
+      "WEAPON_ATTRIBUTE_HEAVY",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  },
+  "WEAPON_TYPE_LONGBOW": {
+    "cost": 50,
+    "damage": "1d8",
+    "damageVersatile": null,
+    "damageType": "DAMAGE_TYPE_PIERCING",
+    "weight": 2,
+    "proficiency": "PROFICIENCY_WEAPON_MARTIAL",
+    "ranged": true,
+    "attributes": [
+      "WEAPON_ATTRIBUTE_AMMUNITION",
+      "WEAPON_ATTRIBUTE_HEAVY",
+      "WEAPON_ATTRIBUTE_TWO_HANDED"
+    ]
+  }
+}

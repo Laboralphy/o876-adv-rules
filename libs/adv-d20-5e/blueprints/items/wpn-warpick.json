@@ -1,0 +1,7 @@
+{
+  "entityType": "ENTITY_TYPE_ITEM",
+  "itemBaseType": "ITEM_BASE_TYPE_WEAPON",
+  "itemSubType": "WEAPON_TYPE_WARPICK",
+  "magical": false,
+  "properties": []
+}
